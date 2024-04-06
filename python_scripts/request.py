@@ -1,8 +1,14 @@
 # pip install requests
 import requests
 import base64
-from ..config.options import renpath, path_to_intermediate_scripts
+import sys
+import os
 
+# Add the parent directory to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# Now you can import the module using relative import
+from config.options import renpath, path_to_intermediate_scripts
 class ImageGen: # Utilizes automatic1111's stable diffusion webui, and a customized checkpoint trained on pixel/anime images.
     def __init__(self, image_prompts, chars):
         self.image_prompts = image_prompts
