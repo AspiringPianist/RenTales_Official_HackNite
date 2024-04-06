@@ -1,6 +1,13 @@
 import subprocess
 import re
-from ..config.options import renpath, path_to_intermediate_scripts
+import sys
+import os
+
+# Add the parent directory to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# Now you can import the module using relative import
+from config.options import renpath, path_to_intermediate_scripts
 class ScriptWriter:
     def __init__(self, path, character_map, scene_description):
         self.path = path
