@@ -31,6 +31,7 @@ Explain the problem statement here.
 - **Libraries**: rembg, requests, subprocess, os, pyGame, tkinter
 - **Tools**: Nvidia CUDA, ngrok, renpy
 - **Others**: Stable Diffusion (gradio by automatic1111), LangChain, Batch Files
+- **Models**: Llama2, BERT, Stable Diffusion, rembg
 
 ## How to Run
 Check out our detailed YouTube video and website for system requirements and setup instructions.
