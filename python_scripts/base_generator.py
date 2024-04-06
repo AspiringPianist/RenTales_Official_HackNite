@@ -1,6 +1,5 @@
 import subprocess
-
-path_to_intermediate_scripts = '../renpy_intermediate_scripts'
+from ..config.options import renpath, path_to_intermediate_scripts
 
 class StoryGen:
 
