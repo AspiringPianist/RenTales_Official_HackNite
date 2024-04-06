@@ -20,6 +20,7 @@ Model utilized for generating script in a human-readable format is also Llama2:7
 There is a script parser that works to convert given script into a .rpy script.  
 There is no need of inputting any API_TOKEN, everything runs offline.  
 There is a user-friendly GUI built using pygame and tkinter, while the story is generating there is also an animated loading screen to indicate that the visual novel is under generation.  
+The model runs fully offline, so there is no worry of data being collected or anonymous telemtry being done. The u
 
 ## Tech Stack
 Technologies used : VSCode, Ollama, HTML, CSS, JavaScript, Python (rembg, requests, subprocess, os, pyGame, tkinter), HuggingFace (transformers, accelerate), Stable Diffusion (credits for gradio : included by automatic1111), Llama2, LangChain (for tweaking the script model), Batch Files, Nvidia CUDA, ngrok, renpy.  
@@ -31,7 +32,7 @@ There is a detailed youtube video and a website explaining the system requiremen
 This model can be hosted on any server with atleast 6GB Ram, and have computing power equivalent or greater than a GTX1650 for optimal performance. For the time being, it can be run locally.  
 
 ## Applications  
-Content creation (youtube shorts), Entertainment, 
+Content creation (youtube shorts), Entertainment, Assisting in story generation, inspiration for Visual Novel Game Developers, Facilitate immersive teaching experiences, storytelling platforms.  
 
 ## Further improvements  
 Dynamic character expression changes using faster image-to-image models, Text-To-Speech through pyttsx3 or models like whisper.ai to make the story more immersive.  
