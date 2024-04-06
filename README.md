@@ -1,12 +1,9 @@
 # RenTales_Official_HackNite
-
-![RenTales Logo](https://github.com/AspiringPianist/RenTales_Official_HackNite/blob/main/RenTales_logo.png)
-
 This was our project for HackNite'24 at IIITB.
 
 ## Track and Contributors
-**Track**: Machine Learning  
-**Contributors**: [Unnath Chittimalla](https://github.com/AspiringPianist), [Prakrititz Borah](https://github.com/SweetBunny123), and [Santhosh Vodnala](https://github.com/vodnalasanthosh47)
+Track : Machine Learning
+Contributors : [Unnath Chittimalla](https://github.com/AspiringPianist), [Prakrititz Borah](https://github.com/SweetBunny123) and [Santhosh Vodnala](https://github.com/vodnalasanthosh47)
 
 ## Problem Statement
 Explain the problem statement here.
