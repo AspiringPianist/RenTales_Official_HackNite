@@ -5,6 +5,9 @@ import math
 import os
 # Initialize Pygame
 def main_screen():
+    current_dir = os.path.abspath(os.getcwd())
+    current_dir = current_dir.replace('\\', '/')
+    current_dir += '/gui'
     pygame.init()
     WIDTH = 1440
     HEIGHT = 900
@@ -14,11 +17,11 @@ def main_screen():
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
 
     # Load the background image
-    background = pygame.image.load("background2.jpg")
+    background = pygame.image.load(current_dir+"/background2.jpg")
     background = pygame.transform.scale(background, (WIDTH, HEIGHT))
 
     # Load the firefly image
-    firefly_image = pygame.image.load("leaf.png")
+    firefly_image = pygame.image.load(current_dir + "/leaf.png")
 
     # Set up the font
     font = pygame.freetype.SysFont("Arial", 30)
@@ -36,15 +39,15 @@ def main_screen():
     generate_button = pygame.Rect(720, 500, 80, 50)
 
     # Load the title image
-    title_image = pygame.image.load("title.png")
+    title_image = pygame.image.load(current_dir+"/title.png")
     title_rect = title_image.get_rect(center=(WIDTH // 2, HEIGHT // 3))
 
     # Load the sub-heading image
-    sub_heading = pygame.image.load('sub_heading.png')
+    sub_heading = pygame.image.load(current_dir+'/sub_heading.png')
     sub_rect = sub_heading.get_rect(center=(WIDTH // 2, HEIGHT // 3 + 100))
     clock = pygame.time.Clock()
     FPS = 120  # Desired FPS
-    frames_folder = "loading"  # Path to the folder containing frames
+    frames_folder = current_dir+"/loading"  # Path to the folder containing frames
     frame_files = sorted(os.listdir(frames_folder))  # Assuming the frames are named sequentially
 
     # Load each frame and store them in a list
