@@ -4,7 +4,13 @@ import random
 import sys
 from Prompt import open_tkinter
 from loading import main_screen
+import os
+import sys
 
+# Your script continues here...
+current_dir = os.path.abspath(os.getcwd())
+current_dir = current_dir.replace('\\', '/')
+current_dir += '/gui'
 # Initialize Pygame
 pygame.init()
 WIDTH = 1440
@@ -15,19 +21,19 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 color = pygame.Color('chartreuse4')
 
 
-background = pygame.image.load("bg.png")
+background = pygame.image.load(current_dir + "/bg.png")
 background = pygame.transform.scale(background, (WIDTH, HEIGHT))
 
 # Load the firefly image
-firefly_image = pygame.image.load("firefly.png")
+firefly_image = pygame.image.load(current_dir + "/firefly.png")
 
 
 # Load the title image
-title_image = pygame.image.load("title.png")
+title_image = pygame.image.load(current_dir + "/title.png")
 title_rect = title_image.get_rect(center=(WIDTH // 2, HEIGHT // 3))
 
 # Load the sub-heading image
-sub_heading = pygame.image.load('sub_heading.png')
+sub_heading = pygame.image.load(current_dir + '/sub_heading.png')
 
 sub_rect = sub_heading.get_rect(center=(WIDTH // 2, HEIGHT // 3 + 100))
 
@@ -46,8 +52,8 @@ for i in range(20):
     }
     fireflies.append(firefly)
 
-original_image = pygame.image.load("Generate_normal.png").convert_alpha()
-hover_image = pygame.image.load("Generate_hover.png").convert_alpha()
+original_image = pygame.image.load(current_dir + "/Generate_normal.png").convert_alpha()
+hover_image = pygame.image.load(current_dir + "/Generate_hover.png").convert_alpha()
 original_width, original_height = original_image.get_size()
 
 scaled_width = 200
