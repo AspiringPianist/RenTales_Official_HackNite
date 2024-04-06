@@ -36,9 +36,16 @@ class Parser:
         with open(path) as file:
             lines = file.readlines()
             for line in lines:
+                line = line.replace('failed to get console mode for stdout: The handle is invalid.', '')
                 line = line.strip()
                 if '(insert newline)' in line:
-                    line.replace('(insert newline)', "")
+                    line = line.replace('(insert newline)', "")
+                if '(insert newline' in line:
+                    line = line.replace('(insert newline', '')
+                if 'insert newline)' in line:
+                    line = line.replace('insert newline)', '')
+                if 'insert newline' in line:
+                    line = line.replace('insert newline', '')
                 if self.is_dialog(line) and 'Narrator' not in line and 'Scene' not in line:
                     self.character, mood_dialog = line.split(':', 2)
                     self.character = rectify_name(self.character.strip())

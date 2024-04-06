@@ -1,14 +1,27 @@
 import tkinter as tk
 from tkinter import messagebox
 from loading import main_screen
+import sys
+import os
+import subprocess
+# Add the parent directory to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from python_scripts import *
+# Now you can import the module using relative import
 entered_text = ''
+current_dir = os.path.abspath(os.getcwd())
+current_dir = current_dir.replace('\\', '/')
+parent = current_dir
+current_dir += '/gui'
+
 def open_tkinter():
+    global prompt
     root = tk.Tk()
     root.geometry("1000x500")  # Increased window height
     root.title("Prompt Window")
 
     # Load the background image
-    background_image = tk.PhotoImage(file="window_blur.png")
+    background_image = tk.PhotoImage(file=current_dir+"/window_blur.png")
 
     # Create a Label widget to display the background image
     background_label = tk.Label(root, image=background_image)
@@ -34,7 +47,12 @@ def open_tkinter():
         else:
             print("Text entered:\n", entered_text)
             root.destroy()
+            with open(parent+'/python_scripts/prompt.txt', 'w') as f:
+                f.write(entered_text)
+                f.close()
+            subprocess.run('python ./python_scripts/story_gen.py')
             main_screen()
+            
 
     submit_button = tk.Button(root, text="Generate", command=submit, bg="#9DD147", fg="black", relief=tk.FLAT, width=20, height=2)
       # Flat colors
