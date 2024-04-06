@@ -1,5 +1,12 @@
 import subprocess
-from ..config.options import renpath, path_to_intermediate_scripts
+import sys
+import os
+
+# Add the parent directory to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# Now you can import the module using relative import
+from config.options import renpath, path_to_intermediate_scripts
 
 class StoryGen:
 
@@ -15,6 +22,18 @@ class StoryGen:
         self.result = subprocess.run(self.cmd, shell=True, stdout= subprocess.PIPE).stdout.decode()
         self.result = self.result.replace('failed to get console mode for stdout: The handle is invalid.', "")
         with open(f'{path_to_intermediate_scripts}/base_story.txt', 'w') as f:
+            f.write(self.result)
+            f.close()
+        output = ''
+        with open(f'{path_to_intermediate_scripts}/base_story.txt', 'r') as f:
+            lines = f.readlines()
+            output = ''
+            for line in lines:
+                line = line.strip()
+                output+=line
+            f.close()
+        self.result = subprocess.run(f'generate only one good possible follow up and only one good possible ending for this story? Heres the story for reference {output}')
+        with open(f'{path_to_intermediate_scripts}/base_story.txt', 'a') as f:
             f.write(self.result)
             f.close()
         print('written base story to base_story.txt!')
