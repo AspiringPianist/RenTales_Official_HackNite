@@ -27,7 +27,7 @@ Explain the problem statement here.
 - **Models**: Ollama, HuggingFace (transformers, accelerate)
 - **Languages**: HTML, CSS, JavaScript, Python
 - **Libraries**: rembg, requests, subprocess, os, pyGame, tkinter
-- **Tools**: Nvidia CUDA, ngrok, renpy
+- **Tools**: Nvidia CUDA , renpy
 - **Others**: Stable Diffusion (gradio by automatic1111), LangChain, Batch Files
 - **Models**: Llama2, BERT, Stable Diffusion, rembg
 
