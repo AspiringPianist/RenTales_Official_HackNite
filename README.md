@@ -59,7 +59,7 @@ Before running the application, please follow these setup instructions:
    - Execution Guide - [here](https://drive.google.com/drive/folders/1qpPppVIIUma3lo8qwJSGwbsdhqbNbR8q?usp=sharing)
 
 2. **Additional Resources:**
-   - For more information and additional system requirements, visit our website [here](https://aspiringpianist.github.io/RenTales_Website) (insert link to the website).
+   - For more information and additional system requirements, visit our website [here](aspiringpianist.github.io/RenTales_Website).
 
 3. **First Time Generating:**
    - Generating for the first time may take some time.
