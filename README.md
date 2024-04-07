@@ -113,4 +113,4 @@ Before running the application, please follow these setup instructions:
 
 
 ## Demo Videos
-Links to [demo videos](https://www.youtube.com/playlist?list=PLMoLtR6lIe1tD-2IbwBkdTHwHbelSbP4e) here.
+Links to [demo videos](https://drive.google.com/drive/folders/1iAEZLaPksLB9BPQew3vxZBeCaWcDnRlo?usp=drive_link) here.
