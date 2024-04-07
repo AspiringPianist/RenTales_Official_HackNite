@@ -47,7 +47,7 @@ Once you have installed the prerequisites, follow these steps to run the system:
 
 1. **Download Checkpoint for the Model:** 
    - Download the checkpoint for our Stable Diffusion model from [here](#) (provide the private link here).
-   - Copy the downloaded file to the directory: `<path_to_stable_diffusion_installation>/webui/models/Stable-D`.
+   - Copy the downloaded file to the directory: `<path_to_stable_diffusion_installation>/webui/models/Stable-Diffusion`.
 
    
 ## How To Run
