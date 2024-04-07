@@ -1,4 +1,3 @@
-Sure, here's a README section you can use on GitHub to compare the three outputs:
 
 ---
 
