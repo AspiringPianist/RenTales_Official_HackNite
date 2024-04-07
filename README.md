@@ -55,11 +55,11 @@ Once you have installed the prerequisites, follow these steps to run the system:
 Before running the application, please follow these setup instructions:
 
 1. **Watch Setup Video:**
-   - You can follow the detailed setup instructions provided in our YouTube video [here](#).
+   - You can follow the detailed setup instructions provided in our YouTube video [here](https://drive.google.com/drive/folders/1mQ96i1CwoNy3SnPFk3s-HR_CoC_F3uK1?usp=sharing).
    - Execution Guide - [here](https://drive.google.com/drive/folders/1qpPppVIIUma3lo8qwJSGwbsdhqbNbR8q?usp=sharing)
 
 2. **Additional Resources:**
-   - For more information and additional system requirements, visit our website [here](aspiringpianist.github.io/RenTales_Website).
+   - For more information and additional system requirements, visit our website [here](https://aspiringpianist.github.io/RenTales_Website/).
 
 3. **First Time Generating:**
    - Generating for the first time may take some time.
