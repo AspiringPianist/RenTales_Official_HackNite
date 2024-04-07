@@ -55,7 +55,8 @@ Once you have installed the prerequisites, follow these steps to run the system:
 Before running the application, please follow these setup instructions:
 
 1. **Watch Setup Video:**
-   - You can follow the detailed setup instructions provided in our YouTube video [here](#) (insert link to YouTube video).
+   - You can follow the detailed setup instructions provided in our YouTube video [here](#).
+   - Execution Guide - [here](https://drive.google.com/drive/folders/1qpPppVIIUma3lo8qwJSGwbsdhqbNbR8q?usp=sharing)
 
 2. **Additional Resources:**
    - For more information and additional system requirements, visit our website [here](#) (insert link to the website).
