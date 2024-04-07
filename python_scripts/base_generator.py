@@ -32,7 +32,8 @@ class StoryGen:
                 line = line.strip()
                 output+=line
             f.close()
-        self.result = subprocess.run(f'generate only one good possible follow up and only one good possible ending for this story? Heres the story for reference {output}')
+        self.result = subprocess.run(f'ollama run llama2 "generate only one good possible follow up and only one good possible ending for this story? Heres the story for reference {output}"', shell=True, stdout= subprocess.PIPE).stdout.decode()
+        self.result = self.result.replace('failed to get console mode for stdout: The handle is invalid.', "")
         with open(f'{path_to_intermediate_scripts}/base_story.txt', 'a') as f:
             f.write(self.result)
             f.close()
